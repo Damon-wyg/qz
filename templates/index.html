@@ -1,29 +1,52 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>毕业生取职技能第一社区</title>
+{% extends "base.html" %}
+{% load staticfiles %}
 
-    <!-- Bootstrap -->
-    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+{% block add_css %}
+    <link href="{% static 'css/docs.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+{% endblock %}
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <h1>网站名：{{ webName }} </h1>
-    <h1>你好，世界！</h1>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  </body>
-</html>
+{% block content %}
+    <div class="bs-docs-masthead head-docs" role="main">
+        <div class="container">
+            <p class="lead" id="qz-lead">{{ settings.SLOGAN }}</p>
+            <div class="qz-sub-lead">
+                <p>曲直网是一个帮助准备进入IT行业的同学快速掌握核心技能的取职社区。通过经典题在线编程，项目实现与peer review等方式，帮助快速入行。</p>
+            </div>
+            <button type="button" class="btn btn-primary">立即开始</button>
+            <p class="qz-sub-slogan">人生这趟旅途，走的大多是曲径，但求职这段，我们为你修直。</p>
+        </div>
+    </div>
+    <div class="bs-docs-featurette">
+        <div class="container">
+            <h2 class="bs-docs-featurette-title">多样的练习场，全面提升IT技能</h2>
+            <p class="lead">从基础问题入手，逐个突破，支持c/c++、java、python、javascript等多种语言的编程练习。相互review，拉帮结伙，共同进步。</p>
+            <hr class="half-rule">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3><span class="glyphicon glyphicon-tasks">&nbsp;<span>入行指引</h3>
+                    <p>明确定位与目标，避免多走弯路；然后开始实践，实践，大量实践~~</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3><span class="glyphicon glyphicon-list-alt">&nbsp;</span>算法编程</h3>
+                    <p>动手实践，提高编码能力；在线实时编程，方便快捷；覆盖多种选择语言，依喜好选择</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3><span class="glyphicon glyphicon-signal">&nbsp;</span>项目实战</h3>
+                    <p>经典项目练习，模拟真实工作环境；peer review，交流思想与心得，共同进步</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bs-docs-featurette docs-bottom">
+        <div class="container">
+            <h2 class="bs-docs-featurette-title">邀您共建更好的取职社区</h2>
+            <p class="lead">社区旨在帮助更多的少走弯路，轻松取职。社区采用半开放式设计，允许大家修改、新增或弹劾站中题目。</p>
+            <hr class="half-rule">
+            <p class="lead"><span class="glyphicon glyphicon-edit">&nbsp;</span>若认为站中题目不好或发现更好的题目，可发起增删改issue；若发现站中bug，请及时反馈给我们。</p>
+            <hr class="half-rule">
+            <p class="lead"><span class="glyphicon glyphicon-usd">&nbsp;</span>若觉得本站对您或他人有帮助，欢迎慷慨捐献，以帮助我们缓解高昂的服务器费用压力。</p>
+        </div>
+    </div>
+{% endblock %}
 

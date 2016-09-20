@@ -1,0 +1,74 @@
+.nav-no-radius {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+
+    margin-bottom: 0px;
+}
+
+.navbar-icon {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 30px;
+}
+
+.nav-icon-img {
+    height: 100%;
+}
+
+#qz-lead {
+    font-size: 28px;
+}
+
+.qz-sub-lead {
+    color: #fff;
+    font-size: medium;
+}
+
+.qz-title-lead {
+    font-size: 28px;
+}
+
+.qz-sub-slogan {
+    font-size: 13px;
+    color: sienna;
+    margin-top: 15px;
+}
+
+.bg-blur {
+    -webkit-filter: blur(12px);
+       -moz-filter: blur(12px);
+        -ms-filter: blur(12px);
+         -o-filter: blur(12px);
+            filter: blur(12px);
+filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=12, MakeShadow=false);
+}
+
+.head-docs {
+    background-image: url(/static/images/bg-blur.jpg);
+    background-size: cover;
+    background-color: #fff;
+}
+
+@media (min-width:768px) {
+.docs-bottom {
+    border-bottom: 0px;
+    padding-bottom: 80px;
+}
+}
+@media (min-width:480px) {
+.docs-bottom {
+    border-bottom: 0px;
+    padding-bottom: 80px;
+}
+}
+@media (max-width:480px) {
+.docs-bottom {
+    border-bottom: 0px;
+}
+}
+
+#footer {
+    font-size: 12px;
+    line-height: 1.1;
+}
