@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block add_css%}
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'css/qz_theme.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="container qz-head-line">
+        <div class="row">
+            <div class="col-md-12 alert alert-info">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <div class="text-center">
+                    <div class="row"><h4><span class="glyphicon glyphicon-pushpin">&nbsp;</span>TIPS:</h4></div>
+                    <div class="row">先明确自己的目标职位，迅速掌握基础知识，然后开始大量的算法编码和项目实战练习。切记，一定要逐个字母<b>亲手</b>敲。</div>
+                    <hr>
+                    <div class="row"><b>编码能力</b>是IT工程师永恒的核心竞争力！</div>
+                    <div class="row"><b><a href="#">立即开始实战练习</a></b></div>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="qz-head-line qz-head">热门职位</h4>
+        <div class="row">
+            {% for tag in job_tags %}
+            <div class="col-md-2 col-sm-3 text-center qz-block">
+                <a href="{{ tag.href }}" target="_blank" class="btn btn-info qz-btn-rounded">{{ tag.name }}</a>
+            </div>
+            {% endfor %}
+        </div>
+
+        <h4 class="qz-head-line qz-head">优秀书籍推荐</h4>
+        <div class="row">
+            {% for book in book_list %}
+            <div class="col-sm-4 col-md-3 text-center qz-block">
+                <div class="text-center">
+                    <a href="{{ book.href }}">
+                        <img class="img-rounded qz-img" src="{{ book.img_src }}" alt="{{ book.name }}">
+                    </a>
+                </div>
+                <div class="text-center qz-atext">
+                    <a href="{{ book.href }}" class="qz-a">{{ book.name }}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="qz-gray-bg">
+    <div class="container qz-head-line">
+        <div class="row">
+            <div class="qz-content-box col-md-12">
+                <div class="row">
+                    <div class="col-md-1 qz-cates-title">标签：</div>
+                    <div class="col-md-11 qz-cates-content">
+                        <a class="active" href="#">全部</a>
+                        {% for tag in tag_list %}
+                        <a class="" href="{{ tag.href }}">{{ tag.name }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% for term in proj_terms %}
+        <div class="row qz-content-box">
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img src="{{ term.imgurl }}" class="img-responsive img-rounded qz-proj-img">
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="qz-proj-text">
+                            <h4 class="qz-proj-title">{{ term.title }}</h4>
+                            <div class="qz-proj-desc">
+                                <span>{{ term.desc_p1 }}</span><span class="qz-sm-hidden">{{ term.desc_p2 }}</span>
+                                <small>&nbsp;&nbsp;<a href="{{ term.detailurl }}" target="_blank">查看详情</a></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row qz-proj-detail-box">
+                    <div class="pull-right qz-proj-detail-num">{{ term.num }}人已完成</div>
+                    <div class="qz-proj-lang">适合用语言：<span>{{ term.lang }}</span></div>
+                    <div>由{{ term.autor }}发布</div>
+                    <div><a href="{{ term.discussurl }}">项目讨论</a></div>
+                    <div><a href="{{ term.crurl }}">寻找review伙伴</a></div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block add_css %}
+    <link href="{% static 'css/docs.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div id="announce" class="container hidden-class">
+        <div class="row">
+            <div class="col-md-12 alert alert-success">
+                <h4>恭喜通过！</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container qz-head-line">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row qz-qustion-msg" id="question">
+                    <div class="row">
+                        <div class="col-sx-12 col-sm-8">
+                        <span class="bg-info qz-text-box">您已经完成了<strong>&nbsp;{{ state.finish_qnum }}&nbsp;/&nbsp;{{ state.total_qnum }}&nbsp;</strong>个题目。</span>
+                        </div>
+                        <span class="pull-right qz-right-align"><a class="btn btn-success btn-md" href="#">再来一题</a></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>题目</th>
+                                    <th>难度</th>
+                                    <th>完成率</th>
+                                    <th>编辑题目</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for qline in qlist %}
+                                <tr>
+                                    <td>{{ qline.qnum }}</td>
+                                    <td><a href="#">{{ qline.qname }}</a></td>
+                                    <td>{{ qline.difficulty }}</td>
+                                    <td>{{ qline.acceptance }}</td>
+                                    <td>
+                                    {% if qline.advisable %}
+                                        <a href="#"><span class="glyphicon glyphicon-edit"> </span></a>
+                                    {% else %}
+                                        &nbsp;
+                                    {% endif %}
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                            <nav class="text-center">
+                                <ul class="pagination">
+                                    <li class="disabled"><a href="#">&laquo;</a></li>
+                                    {% for num in state.page_num %}
+                                    <li><a href="#">{{ num }}</a></li>
+                                    {% endfor %}
+                                    <li><a href="#">&raquo;</a></li>
+                                </ul>
+                            </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-2">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-warning">
+                                <strong><span class="glyphicon glyphicon-heart">&nbsp;贡献</span></strong>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#" target="_blank" class="btn btn-success btn-md btn-block">贡献面试题</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-2">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-warning">
+                                <strong><span class="glyphicon glyphicon-tags">&nbsp;类别标签</span></strong>
+                            </li>
+                            {% for item in tag_list %}
+                            <a href="{{ item.href }}" class="list-group-item">
+                                <span class="badge">{{ item.nums }}</span>
+                                <small>{{ item.tag }}</small>
+                            </a>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
