@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="container qz-head">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="qz-head-line">
+                    <h3 class="qz-inline">{{ qtitle }}</h3>
+                    <div class="pull-right qz-top-buttons">
+                        <div class="btn-group">
+                            <a class="btn btn-default" href="{{ discussurl }}">相关讨论</a>
+                            <a class="btn btn-default" href="{{ rand_question }}">换一题</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="question-content">
+                    <p></p>
+                    <p>{{ qcontent }}</p>
+                    <p>
+                        <b>例如：</b><br>
+                        {{ qexample }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="container">
+        <div class="row qz-margin-bottom">
+            <div class="col-sm-3">
+                <select class="form-control select">
+                    {% for lang in lang_list %}
+                    <option value="{{ lang.val }}">{{ lang.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn">重置</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <textarea id="coding-box" class="form-control" name="code" rows="code">Input your code</textarea>
+            </div>
+        </div>
+        <div class="row qz-margin-top">
+            <div class="col-md-12">
+                <button class="btn btn-success">提交</button>
+            </div>
+        </div>
+        <div class="row hidden-class">
+            <div class="col-md-12">
+                <h4>运行结果：{{ run_state }}</h4>
+                <span id="run-res">{{ run_res_msg }}</span>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

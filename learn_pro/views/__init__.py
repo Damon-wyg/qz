@@ -125,3 +125,41 @@ def projects(request):
     }
     return render(request, 'projects.html', data)
 
+def question(request):
+    data = {
+        'settings': web_settings,
+        'qtitle': '问题标题标题',
+        'discussurl': '#',
+        'rand_question': '#',
+        'qcontent': '倒序一个字符串，倒序一个字符串。。',
+        'qexample': 'abscsd->dscsba',
+        'lang_list': [
+            {
+                'val': 'cpp',
+                'name': 'c++',
+            },
+            {
+                'val': 'js',
+                'name': 'javascript',
+            },
+        ]
+    }
+    return render(request, 'question.html', data)
+
+def projterm(request):
+    data = {
+        'settings': web_settings,
+        'ptitle': '项目名称名称',
+        'discussurl': '#',
+        'rand_question': '#',
+        'pcontent': '描述一下项目是干嘛的，怎么做，可以怎样，邀请伙伴等等',
+        'ptodo': '1.干嘛。2.干什么。3.xxxx。'
+    }
+    return render(request, 'projterm.html', data)
+
+def discuss(request):
+    data = {
+        'settings': web_settings,
+    }
+    return render(request, 'discuss.html', data)
+

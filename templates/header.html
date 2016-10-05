@@ -8,28 +8,112 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand navbar-icon" href="#">
+            <a class="navbar-brand navbar-icon" href="/">
                 <img class="nav-icon-img" alt="qz.com.cn" src="{% static 'images/qz-logo3.png' %}">
             </a>
         </div>
 
         <div class="collapse navbar-collapse" id="lg-screen-navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">首页</a></li>
-                <li class="dropdown">
+            <ul class="nav navbar-nav" id="qz-navbar">
+                <li id="index"><a href="/">首页</a></li>
+                <li id="introduct"><a href="/introduct">入门</a></li>
+                <li class="dropdown" id="problems">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">练习<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">入门指引</a></li>
-                        <li><a href="#">算法编程</a></li>
-                        <li><a href="#">项目实战</a></li>
+                        <li id="algorithms"><a href="/problems/algorithms">算法编程</a></li>
+                        <li id="projects"><a href="/problems/projects">项目实战</a></li>
                     </ul>
                 </li>
-                <li><a href="#">讨论</a></li>
+                <li id="discuss"><a href="/discuss">讨论</a></li>
             </ul>
 
+            {% if user_logined %}
+            <ul id="user_msg" class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ user_name }}
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">我的主页</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">做过的题</a></li>
+                        <li><a href="#">参与项目</a></li>
+                        <li><a href="#">我的话题</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+            {% else %}
             <div class="navbar-form navbar-right">
-                <a class="btn btn-primary" href="#">注册</a>
-                <a class="btn btn-default" href="#">登陆</a>
+                <a class="btn btn-primary" href="#register-modal" data-toggle="modal">注册</a>
+                <a class="btn btn-default" href="#login-modal" data-toggle="modal">登陆</a>
+                <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title" id="myModalLabel">欢迎登陆</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xs-4 text-center">
+                                        <label for="email-input">E-mail</label>
+                                    </div>
+                                    <div class="col-xs-8 qz-margin-bottom">
+                                        <input type="email" class="form-control" id="email-input" placeholder="xxxx@xx.xx">
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <label for="passwd-input">密码</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <input type="password" class="form-control" id="passwd-input" placeholder="请输入密码">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">登陆</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title" id="myModalLabel">欢迎加入</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xs-4 text-center">
+                                        <label for="email-input">E-mail</label>
+                                    </div>
+                                    <div class="col-xs-8 qz-margin-bottom">
+                                        <input type="email" class="form-control" id="email-input" placeholder="xxxx@xx.xx">
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <label for="passwd-input">密码</label>
+                                    </div>
+                                    <div class="col-xs-8 qz-margin-bottom">
+                                        <input type="password" class="form-control" id="passwd-input" placeholder="请输入密码">
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <label for="passwd-input">确认密码</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <input type="password" class="form-control" id="passwd-input" placeholder="请再次输入密
+                                        码">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">注册</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
             </div>
         </div>
     </div>

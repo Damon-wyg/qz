@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="container qz-head">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="qz-head-line">
+                    <h3 class="qz-inline">{{ ptitle }}</h3>
+                    <div class="pull-right qz-top-buttons">
+                        <div class="btn-group">
+                            <a class="btn btn-default" href="{{ discussurl }}">相关讨论</a>
+                            <a class="btn btn-default" href="{{ rand_question }}">换一题</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="question-content">
+                    <p></p>
+                    <p>{{ pcontent }}</p>
+                    <p>
+                        <b>项目Todo：</b><br>
+                        {{ ptodo }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="container">
+    </div>
+{% endblock %}
+
