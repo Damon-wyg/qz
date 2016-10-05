@@ -1,0 +1,27 @@
+/* btn */
+.qz-btn-rounded {
+    border-radius: 25px !important;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.qz-btn-light {
+    color: #fff;
+    border-color: #666;
+}
+
+.qz-img {
+    width: 140px;
+    height: 170px;
+}
+
+.qz-atext {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 15px;
+}
+
+.qz-a {
+    color: #333;
+}
+
