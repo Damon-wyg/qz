@@ -8,9 +8,9 @@ from abc import ABCMeta, abstractmethod
 
 
 class DictDataBase(object):
-'''
-以字典格式返回class数据的基类
-'''
+    '''
+    以字典格式返回class数据的基类
+    '''
     def __init__(self):
         pass
     def getDict(self):
@@ -18,36 +18,36 @@ class DictDataBase(object):
 
 
 class DataBase(DictDataBase):
-'''
-定义base数据类，所有模板共用的数据放在这里
-'''
+    '''
+    定义base数据类，所有模板共用的数据放在这里
+    '''
     def __init__(self):
         self.settings = web_settings
         self.login_state = {}
 
 
 class IndexData(DataBase):
-'''
-定义供首页用的数据
-'''
+    '''
+    定义供首页用的数据
+    '''
     def __init__(self):
         super(IndexData, self).__init__()
         pass
 
 
 class JobDesc(DictDataBase):
-'''
-工作tag数据描述类
-'''
+    '''
+    工作tag数据描述类
+    '''
     def __init__(self, *args, **kwargs):
         self.href = kwargs.get('href') or '#'
         self.name = kwargs.get('name') or ''
 
 
 class BookDesc(DictDataBase):
-'''
-推荐数据数据描述类
-'''
+    '''
+    推荐数据数据描述类
+    '''
     def __init__(self, *args, **kwargs):
         self.href = kwargs.get('href') or '#'
         self.name = kwargs.get('name') or ''
@@ -55,11 +55,11 @@ class BookDesc(DictDataBase):
 
 
 class IntroductData(DataBase):
-'''
-定义供入门介绍页用的数据
-其中，job_tags和book_list是数组，存放字典
-~~~~~~JobDesc~~~~BookDesc~~~~
-'''
+    '''
+    定义供入门介绍页用的数据
+    其中，job_tags和book_list是数组，存放字典
+    ~~~~~~JobDesc~~~~BookDesc~~~~
+    '''
     def __init__(self):
         super(IntroductData, self).__init__()
         self.job_tags = []
@@ -79,6 +79,9 @@ class IntroductData(DataBase):
 
 
 class QuestionDesc(DictDataBase):
+    '''
+    题目描述类
+    '''
     def __init__(self, *args, **kwargs):
         self.qnum = kwargs.get('qnum') or 0
         self.qname = kwargs.get('qname') or ''
@@ -88,15 +91,18 @@ class QuestionDesc(DictDataBase):
 
 
 class QuesTagDesc(DictDataBase):
+    '''
+    题目标签描述类
+    '''
     def __init__(self, *args, **kwargs):
         self.href = kwargs.get('href') or '#'
         self.nums = kwargs.get('nums') or 0
         self.tag = kwargs.get('tag') or ''
 
 class AlgorithmData(DataBase):
-'''
-算法题目汇总页数据描述类
-'''
+    '''
+    算法题目汇总页数据描述类
+    '''
     def __init__(self):
         super(AlgorithmData, self).__init__()
         self.qlist = []
@@ -124,11 +130,17 @@ class AlgorithmData(DataBase):
 
 
 class ProjTagDesc(DictDataBase):
+    '''
+    项目标签描述类
+    '''
     def __init__(self, *args, **kwargs):
         self.href = kwargs.get('href') or '#'
         self.name = kwargs.get('name') or ''
 
 class ProjTermDesc(DictDataBase):
+    '''
+    项目描述类
+    '''
     def __init__(self, *args, **kwargs):
         self.imgurl = kwargs.get('imgurl') or '#'
         self.title = kwargs.get('title') or ''
@@ -142,9 +154,9 @@ class ProjTermDesc(DictDataBase):
         self.crurl = kwargs.get('crurl') or '#'
 
 class ProjectsData(DataBase):
-'''
-练习项目数据描述类
-'''
+    '''
+    练习项目数据描述类
+    '''
     def __init__(self):
         super(ProjectsData, self).__init__()
         self.tag_list = []
@@ -164,15 +176,19 @@ class ProjectsData(DataBase):
 
 
 class LangDesc(DictDataBase):
+    '''
+    语言描述类
+    '''
     def __init__(self, *args, **kwargs):
         self.val = kwargs.get('val') or ''
         self.name = kwargs.get('name') or ''
 
 class QuestionData(DataBase):
-'''
-问题详情数据描述类
-'''
+    '''
+    问题详情数据描述类
+    '''
     def __init__(self):
+        super(QuestionData, self).__init__()
         self.qtitle = ''
         self.discussurl = '#'
         self.rand_question = '#'
@@ -188,14 +204,23 @@ class QuestionData(DataBase):
 
 
 class ProjTermData(DataBase):
-    def __init__(self):
-        self.ptitle = ''
-        self.discussurl = ''
-        self.rand_question = ''
-        self.pcontent = ''
-        self.ptodo = ''
+    '''
+    项目详情描述类
+    '''
+    def __init__(self, *args, **kwargs):
+        super(ProjTermData, self).__init__()
+        self.ptitle = kwargs.get('ptitle') or ''
+        self.discussurl = kwargs.get('discussurl') or '#'
+        self.rand_question = kwargs.get('rand_question') or '#'
+        self.pcontent = kwargs.get('pcontent') or ''
+        self.ptodo = kwargs.get('ptodo') or ''
 
 
 class DiscussData(DataBase):
-    pass
+    '''
+    讨论页数据接口类
+    '''
+    def __init__(self):
+        super(DiscussData, self).__init__()
+        pass
     
