@@ -1,8 +1,0 @@
-[DEBUG]: 2017-01-16 16:37:49,860 - utils - 51778 - 123145306509312: (0.001) SET SQL_AUTO_IS_NULL = 0; args=None
-[DEBUG]: 2017-01-16 16:37:49,876 - utils - 51778 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
-[DEBUG]: 2017-01-16 16:37:49,879 - utils - 51778 - 123145306509312: (0.003) SHOW FULL TABLES; args=None
-[DEBUG]: 2017-01-16 16:37:49,882 - utils - 51778 - 123145306509312: (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
-[DEBUG]: 2017-01-16 16:38:04,257 - utils - 51780 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
-[DEBUG]: 2017-01-16 16:38:04,269 - utils - 51780 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
-[DEBUG]: 2017-01-16 16:38:04,274 - utils - 51780 - 123145306509312: (0.004) SHOW FULL TABLES; args=None
-[DEBUG]: 2017-01-16 16:38:04,278 - utils - 51780 - 123145306509312: (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()

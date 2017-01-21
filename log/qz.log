@@ -1,4 +1,0 @@
-[DEBUG]: 2017-01-21 20:34:56,937-utils.py:execute()-line:89:	(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
-[DEBUG]: 2017-01-21 20:34:56,958-utils.py:execute()-line:89:	(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
-[DEBUG]: 2017-01-21 20:34:56,965-utils.py:execute()-line:89:	(0.006) SHOW FULL TABLES; args=None
-[DEBUG]: 2017-01-21 20:34:56,969-utils.py:execute()-line:89:	(0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
