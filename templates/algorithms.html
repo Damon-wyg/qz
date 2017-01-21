@@ -41,7 +41,7 @@
                                 {% for qline in qlist %}
                                 <tr>
                                     <td>{{ qline.qnum }}</td>
-                                    <td><a href="#">{{ qline.qname }}</a></td>
+                                    <td><a href="{{qline.qurl}}">{{ qline.qname }}</a></td>
                                     <td>{{ qline.difficulty }}</td>
                                     <td>{{ qline.acceptance }}</td>
                                     <td>

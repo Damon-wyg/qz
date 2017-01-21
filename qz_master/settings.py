@@ -41,7 +41,6 @@ INSTALLED_APPS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    'learn_pro.init_mod',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -74,6 +73,52 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'qz_master.wsgi.application'
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'standard': {
+            'format': '[%(levelname)s]: %(asctime)s-%(filename)s:%(funcName)s()-line:%(lineno)d:\t%(message)s'
+        },
+    },
+    'filters': {
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
+    'handlers': {
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+            'formatter': 'standard',
+        },
+        'file_handler': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.TimedRotatingFileHandler',
+            'filename': BASE_DIR + '/log/qz.log',
+            'formatter': 'standard',
+        },
+        'console': {
+            'level': 'INFO',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'standard',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers' :['file_handler', 'console'],
+            'level':'DEBUG',
+            'propagate': False
+        },
+        'django.request': {
+            'handlers': ['mail_admins'],
+            'level': 'ERROR',
+            'propagate': False
+        },
+    }
+}
+
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
@@ -96,13 +141,13 @@ DATABASES = {
 
 LANGUAGE_CODE = 'zh_CN'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Etc/GMT-8'
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)

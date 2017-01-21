@@ -3,9 +3,11 @@
 本文件用于数据接口定义，定义与模板交互的各种数据接口类
 '''
 
-import qz_master import web_settings
+from qz_master import web_settings
 from abc import ABCMeta, abstractmethod
+import logging
 
+logger = logging.getLogger('django')
 
 class DictDataBase(object):
     '''
@@ -66,13 +68,13 @@ class IntroductData(DataBase):
         self.book_list = []
 
     def addJobTag(self, *args, **kwargs):
-        self.job_tags.append(JobDesc(args, kwargs).getDict())
+        self.job_tags.append(JobDesc(*args, **kwargs).getDict())
     
     def addJobTagObj(self, jobTag):
         self.job_tags.append(jobTag.getDict())
     
     def addBookDesc(self, *args, **kwargs):
-        self.book_list.append(BookDesc(args, kwargs).getDict())
+        self.book_list.append(BookDesc(*args, **kwargs).getDict())
 
     def addBookDescObj(self, bookDesc):
         self.book_list.append(bookDesc.getDict())
@@ -84,6 +86,7 @@ class QuestionDesc(DictDataBase):
     '''
     def __init__(self, *args, **kwargs):
         self.qnum = kwargs.get('qnum') or 0
+        self.qurl = kwargs.get('qurl') or '#'
         self.qname = kwargs.get('qname') or ''
         self.difficulty = kwargs.get('difc') or ''
         self.acceptance = kwargs.get('accep') or ''
@@ -110,13 +113,13 @@ class AlgorithmData(DataBase):
         self.state = {}
 
     def addQuestion(self, *args, **kwargs):
-        self.qlist.append(QuestionDesc(args, kwargs).getDict())
+        self.qlist.append(QuestionDesc(*args, **kwargs).getDict())
 
     def addQuestionObj(self, quest):
         self.qlist.append(quest.getDict())
 
     def addTag(self, *args, **kwargs):
-        self.tag_list.append(QuesTagDesc(args, kwargs).getDict())
+        self.tag_list.append(QuesTagDesc(*args, **kwargs).getDict())
 
     def addTagObj(self, quesTag):
         self.tag_list.append(quesTag.getDict())
@@ -163,13 +166,13 @@ class ProjectsData(DataBase):
         self.proj_terms = []
 
     def addTag(self, *args, **kwargs):
-        self.tag_list.append(ProjTagDesc(args, kwargs).getDict())
+        self.tag_list.append(ProjTagDesc(*args, **kwargs).getDict())
 
     def addTagObj(self, projTag):
         self.tag_list.append(projTag.getDict())
 
     def addProjTerm(self, *args, **kwargs):
-        self.proj_terms.append(ProjTermDesc(args, kwargs).getDict())
+        self.proj_terms.append(ProjTermDesc(*args, **kwargs).getDict())
    
     def addProjTermObj(self, projTerm):
         self.proj_terms.append(projTerm.getDict())
@@ -187,17 +190,23 @@ class QuestionData(DataBase):
     '''
     问题详情数据描述类
     '''
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         super(QuestionData, self).__init__()
-        self.qtitle = ''
-        self.discussurl = '#'
-        self.rand_question = '#'
-        self.qcontent = ''
-        self.qexample = ''
+        self._setData(*args, **kwargs)
         self.lang_list = []
 
+    def _setData(self, *args, **kwargs):
+        self.qtitle = kwargs.get('qtitle') or ''
+        self.discussurl = kwargs.get('discussurl') or '#'
+        self.rand_question = kwargs.get('rand_question') or '#'
+        self.qcontent = kwargs.get('qcontent') or ''
+        self.qexample = kwargs.get('qexample') or ''
+
+    def addQuestionDetailData(self, *args, **kwargs):
+        self._setData(*args, **kwargs)
+
     def addLang(self, *args, **kwargs):
-        self.lang_list.append(LangDesc(args, kwargs).getDict())
+        self.lang_list.append(LangDesc(*args, **kwargs).getDict())
 
     def addLangObj(self, lang):
         self.lang_list.append(lang.getDict())
@@ -209,12 +218,17 @@ class ProjTermData(DataBase):
     '''
     def __init__(self, *args, **kwargs):
         super(ProjTermData, self).__init__()
+        self._setData(*args, **kwargs)
+        
+    def _setData(self, *args, **kwargs):
         self.ptitle = kwargs.get('ptitle') or ''
         self.discussurl = kwargs.get('discussurl') or '#'
         self.rand_question = kwargs.get('rand_question') or '#'
         self.pcontent = kwargs.get('pcontent') or ''
         self.ptodo = kwargs.get('ptodo') or ''
 
+    def addProjTermData(self, *args, **kwargs):
+        self._setData(*args, **kwargs)
 
 class DiscussData(DataBase):
     '''

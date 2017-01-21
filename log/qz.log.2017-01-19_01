@@ -1,0 +1,113 @@
+[DEBUG]: 2017-01-18 15:32:50,435 - utils - 54844 - 123145306509312: (0.001) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 15:32:50,460 - utils - 54844 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 15:32:50,471 - utils - 54844 - 123145306509312: (0.012) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 15:32:50,494 - utils - 54844 - 123145306509312: (0.019) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 15:36:12,669 - utils - 54857 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 15:36:12,681 - utils - 54857 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 15:36:12,683 - utils - 54857 - 123145306509312: (0.002) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 15:36:12,695 - utils - 54857 - 123145306509312: (0.010) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 15:38:58,426 - utils - 54869 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 15:38:58,445 - utils - 54869 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 15:38:58,450 - utils - 54869 - 123145306509312: (0.005) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 15:38:58,454 - utils - 54869 - 123145306509312: (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 15:52:02,864 - utils - 54928 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 15:52:02,880 - utils - 54928 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 15:52:02,887 - utils - 54928 - 123145306509312: (0.007) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 15:52:02,890 - utils - 54928 - 123145306509312: (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 16:06:01,050 - utils - 54961 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:06:01,068 - utils - 54961 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:06:01,076 - utils - 54961 - 123145306509312: (0.007) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 16:06:01,079 - utils - 54961 - 123145306509312: (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 16:08:16,572 - utils - 54968 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:08:16,581 - utils - 54968 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:08:16,582 - utils - 54968 - 123145306509312: (0.001) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 16:08:16,584 - utils - 54968 - 123145306509312: (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 16:12:55,203 - utils - 54985 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:12:55,217 - utils - 54985 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:12:55,219 - utils - 54985 - 123145306509312: (0.002) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 16:12:55,221 - utils - 54985 - 123145306509312: (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 16:19:08,406 - utils - 55009 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:19:08,419 - utils - 55009 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:19:08,423 - utils - 55009 - 123145306509312: (0.004) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 16:19:08,426 - utils - 55009 - 123145306509312: (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 16:20:45,623 - utils - 55016 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:20:45,635 - utils - 55016 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:20:45,637 - utils - 55016 - 123145306509312: (0.002) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 16:20:45,639 - utils - 55016 - 123145306509312: (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 16:23:40,866 - utils - 55024 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:23:40,882 - utils - 55024 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:23:40,884 - utils - 55024 - 123145306509312: (0.002) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 16:23:40,887 - utils - 55024 - 123145306509312: (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 16:24:30,311 - utils - 55029 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:24:30,324 - utils - 55029 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:24:30,326 - utils - 55029 - 123145306509312: (0.002) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 16:24:30,328 - utils - 55029 - 123145306509312: (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 16:29:05,021 - utils - 55046 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:29:05,042 - utils - 55046 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:29:05,048 - utils - 55046 - 123145306509312: (0.006) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 16:29:05,051 - utils - 55046 - 123145306509312: (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 16:31:53,413 - utils - 55056 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:31:53,425 - utils - 55056 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:31:53,426 - utils - 55056 - 123145306509312: (0.001) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 16:31:53,428 - utils - 55056 - 123145306509312: (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 16:31:57,623 - urls - 55056 - 123145310715904: urls model is in..
+[DEBUG]: 2017-01-18 16:31:57,627 - introductor - 55056 - 123145310715904: im in ..
+[DEBUG]: 2017-01-18 16:31:57,627 - introductor - 55056 - 123145310715904: {'login_state': {}, 'job_tags': [{'href': '#', 'name': ''}], 'book_list': [{'href': '#', 'name': '', 'img_src': ''}], 'settings': <module 'qz_master.web_settings' from '/Users/baidu/Documents/open_source_proj/qz_master/qz_master/web_settings.pyc'>}
+[DEBUG]: 2017-01-18 16:31:59,449 - introductor - 55056 - 123145310715904: im in ..
+[DEBUG]: 2017-01-18 16:31:59,449 - introductor - 55056 - 123145310715904: {'login_state': {}, 'job_tags': [{'href': '#', 'name': ''}], 'book_list': [{'href': '#', 'name': '', 'img_src': ''}], 'settings': <module 'qz_master.web_settings' from '/Users/baidu/Documents/open_source_proj/qz_master/qz_master/web_settings.pyc'>}
+[DEBUG]: 2017-01-18 16:33:14,316 - utils - 55061 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:33:14,328 - utils - 55061 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:33:14,330 - utils - 55061 - 123145306509312: (0.002) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 16:33:14,333 - utils - 55061 - 123145306509312: (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 16:38:43,305 - introductor - 55061 - 123145310715904: im in ..
+[INFO]: 2017-01-18 16:38:43,305 - interface - 55061 - 123145310715904: href=#
+[INFO]: 2017-01-18 16:38:43,305 - interface - 55061 - 123145310715904: name=工作啦
+[DEBUG]: 2017-01-18 16:38:43,305 - introductor - 55061 - 123145310715904: {'login_state': {}, 'job_tags': [{'href': '#', 'name': ''}], 'book_list': [{'href': '#', 'name': '', 'img_src': ''}], 'settings': <module 'qz_master.web_settings' from '/Users/baidu/Documents/open_source_proj/qz_master/qz_master/web_settings.pyc'>}
+[DEBUG]: 2017-01-18 16:41:29,021 - utils - 55091 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:41:29,042 - utils - 55091 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:41:29,045 - utils - 55091 - 123145306509312: (0.003) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 16:41:29,050 - utils - 55091 - 123145306509312: (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 16:41:32,271 - introductor - 55091 - 123145310715904: im in ..
+[INFO]: 2017-01-18 16:41:32,271 - interface - 55091 - 123145310715904: href=#
+[INFO]: 2017-01-18 16:41:32,271 - interface - 55091 - 123145310715904: name=工作啦
+[INFO]: 2017-01-18 16:41:32,271 - interface - 55091 - 123145310715904: {'href': '#', 'name': '\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x95\xa6'}
+[INFO]: 2017-01-18 16:41:32,271 - interface - 55091 - 123145310715904: {}
+[DEBUG]: 2017-01-18 16:41:32,271 - introductor - 55091 - 123145310715904: {'login_state': {}, 'job_tags': [{'href': '#', 'name': ''}], 'book_list': [{'href': '#', 'name': '', 'img_src': ''}], 'settings': <module 'qz_master.web_settings' from '/Users/baidu/Documents/open_source_proj/qz_master/qz_master/web_settings.pyc'>}
+[DEBUG]: 2017-01-18 16:47:06,638 - utils - 55103 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:47:06,652 - utils - 55103 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:47:06,659 - utils - 55103 - 123145306509312: (0.006) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 16:47:06,662 - utils - 55103 - 123145306509312: (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 16:47:14,161 - introductor - 55103 - 123145310715904: im in ..
+[INFO]: 2017-01-18 16:47:14,161 - interface - 55103 - 123145310715904: href=#
+[INFO]: 2017-01-18 16:47:14,161 - interface - 55103 - 123145310715904: name=工作啦
+[INFO]: 2017-01-18 16:47:14,161 - interface - 55103 - 123145310715904: {'href': '#', 'name': '\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x95\xa6'}
+[INFO]: 2017-01-18 16:47:14,161 - interface - 55103 - 123145310715904: {'href': '#', 'name': '\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x95\xa6'}
+[DEBUG]: 2017-01-18 16:47:14,161 - introductor - 55103 - 123145310715904: {'login_state': {}, 'job_tags': [{'href': '#', 'name': '\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x95\xa6'}], 'book_list': [{'href': '#', 'name': '', 'img_src': ''}], 'settings': <module 'qz_master.web_settings' from '/Users/baidu/Documents/open_source_proj/qz_master/qz_master/web_settings.pyc'>}
+[DEBUG]: 2017-01-18 16:49:08,175 - utils - 55110 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:49:08,189 - utils - 55110 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:49:08,191 - utils - 55110 - 123145306509312: (0.002) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 16:49:08,193 - utils - 55110 - 123145306509312: (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 16:49:45,173 - utils - 55115 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:49:45,192 - utils - 55115 - 123145306509312: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-18 16:49:45,196 - utils - 55115 - 123145306509312: (0.003) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-18 16:49:45,200 - utils - 55115 - 123145306509312: (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-18 16:49:47,474 - introductor - 55115 - 123145310715904: im in ..
+[DEBUG]: 2017-01-18 16:49:47,474 - introductor - 55115 - 123145310715904: {'login_state': {}, 'job_tags': [{'href': '#', 'name': '\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x95\xa6'}], 'book_list': [{'href': '#', 'name': '\xe8\xbf\x99\xe6\x98\xaf\xe4\xb8\x80\xe4\xb8\xaa\xe4\xb9\xa6\xe5\x90\x8d', 'img_src': 'https://dn-simplecloud.qbox.me/1471513730333.png'}], 'settings': <module 'qz_master.web_settings' from '/Users/baidu/Documents/open_source_proj/qz_master/qz_master/web_settings.pyc'>}
+[DEBUG]: 2017-01-19 00:58:15,009 - utils.py:execute - line:89: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-19 00:58:15,029 - utils.py:execute - line:89: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-19 00:58:15,031 - utils.py:execute - line:89: (0.001) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-19 00:58:15,033 - utils.py:execute - line:89: (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-19 00:58:20,512 - introductor.py:introduct - line:9: im in ..
+[DEBUG]: 2017-01-19 00:58:20,512 - introductor.py:introduct - line:13: {'login_state': {}, 'job_tags': [{'href': '#', 'name': '\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x95\xa6'}], 'book_list': [{'href': '#', 'name': '\xe8\xbf\x99\xe6\x98\xaf\xe4\xb8\x80\xe4\xb8\xaa\xe4\xb9\xa6\xe5\x90\x8d', 'img_src': 'https://dn-simplecloud.qbox.me/1471513730333.png'}], 'settings': <module 'qz_master.web_settings' from '/Users/baidu/Documents/open_source_proj/qz_master/qz_master/web_settings.pyc'>}
+[DEBUG]: 2017-01-19 01:00:36,885-utils.py:execute-line:89:	(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-19 01:00:36,895-utils.py:execute-line:89:	(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-19 01:00:36,896-utils.py:execute-line:89:	(0.001) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-19 01:00:36,899-utils.py:execute-line:89:	(0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-19 01:00:50,900-introductor.py:introduct-line:9:	im in ..
+[DEBUG]: 2017-01-19 01:00:50,901-introductor.py:introduct-line:13:	{'login_state': {}, 'job_tags': [{'href': '#', 'name': '\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x95\xa6'}], 'book_list': [{'href': '#', 'name': '\xe8\xbf\x99\xe6\x98\xaf\xe4\xb8\x80\xe4\xb8\xaa\xe4\xb9\xa6\xe5\x90\x8d', 'img_src': 'https://dn-simplecloud.qbox.me/1471513730333.png'}], 'settings': <module 'qz_master.web_settings' from '/Users/baidu/Documents/open_source_proj/qz_master/qz_master/web_settings.pyc'>}
+[DEBUG]: 2017-01-19 01:01:42,156-utils.py:execute()-line:89:	(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-19 01:01:42,166-utils.py:execute()-line:89:	(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[DEBUG]: 2017-01-19 01:01:42,168-utils.py:execute()-line:89:	(0.001) SHOW FULL TABLES; args=None
+[DEBUG]: 2017-01-19 01:01:42,170-utils.py:execute()-line:89:	(0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG]: 2017-01-19 01:01:47,479-introductor.py:introduct()-line:9:	im in ..
+[DEBUG]: 2017-01-19 01:01:47,479-introductor.py:introduct()-line:13:	{'login_state': {}, 'job_tags': [{'href': '#', 'name': '\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x95\xa6'}], 'book_list': [{'href': '#', 'name': '\xe8\xbf\x99\xe6\x98\xaf\xe4\xb8\x80\xe4\xb8\xaa\xe4\xb9\xa6\xe5\x90\x8d', 'img_src': 'https://dn-simplecloud.qbox.me/1471513730333.png'}], 'settings': <module 'qz_master.web_settings' from '/Users/baidu/Documents/open_source_proj/qz_master/qz_master/web_settings.pyc'>}
