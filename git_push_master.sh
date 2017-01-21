@@ -20,7 +20,7 @@ echo "The diff files num is: ${len}, there are as follows:"
 echo ${arr[@]}
 
 #begin to commit and push to git
-git add .
+git add -u .
 git commit -m $1
 wait
 git push origin master
